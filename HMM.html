@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>You're Invited!</h2>
+    <p>Join us for a special Valentine's Day celebration filled with love and joy.</p>
+    <p>Date: February 14, 2025<br>
+       Time: 7:00 PM<br>
+       Venue: Love Hall, UP Cebu</p>
+
+    <a id="yes" href="#">Yes, can't wait! 💕</a>
+    <a id="no" href="#">Sorry, can't make it 💔</a>
+  </div>
+
+  <script>
+    const noButton = document.getElementById('no');
+
+    noButton.addEventListener('mouseover', () => {
+      const randomX = Math.random() * (window.innerWidth - noButton.offsetWidth);
+      const randomY = Math.random() * (window.innerHeight - noButton.offsetHeight);
+      noButton.style.left = `${randomX}px`;
+      noButton.style.top = `${randomY}px`;
+      noButton.style.position = "absolute";
+    });
+  </script>
+</body>
+</html>
