@@ -42,6 +42,7 @@ a {
   background: #eee;
   margin-right: 50px;
   position: absolute;
+  display: inline-block;
 }
 
 #yes {
