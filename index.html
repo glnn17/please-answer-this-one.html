@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valentine's Day Invitation</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #no {
+      display: inline-block;
+      position: absolute;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -19,17 +25,17 @@
   </div>
 
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const noButton = document.getElementById('no');
+    document.addEventListener("DOMContentLoaded", function () {
+      const noButton = document.getElementById('no');
 
-    noButton.addEventListener('mouseover', () => {
-      const randomX = Math.random() * (window.innerWidth - noButton.offsetWidth);
-      const randomY = Math.random() * (window.innerHeight - noButton.offsetHeight);
-      noButton.style.left = `${randomX}px`;
-      noButton.style.top = `${randomY}px`;
-      noButton.style.position = "absolute";
+      noButton.addEventListener('mouseover', () => {
+        const randomX = Math.random() * (window.innerWidth - noButton.offsetWidth);
+        const randomY = Math.random() * (window.innerHeight - noButton.offsetHeight);
+        noButton.style.left = `${randomX}px`;
+        noButton.style.top = `${randomY}px`;
+        noButton.style.position = "absolute";
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
