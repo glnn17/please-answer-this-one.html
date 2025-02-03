@@ -19,6 +19,7 @@
   </div>
 
   <script>
+  document.addEventListener("DOMContentLoaded", function () {
     const noButton = document.getElementById('no');
 
     noButton.addEventListener('mouseover', () => {
@@ -28,6 +29,7 @@
       noButton.style.top = `${randomY}px`;
       noButton.style.position = "absolute";
     });
-  </script>
+  });
+</script>
 </body>
 </html>
